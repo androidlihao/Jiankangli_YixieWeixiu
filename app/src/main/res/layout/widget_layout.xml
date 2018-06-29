@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/toolbar"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:background="#06c1ae"
+    android:minHeight="?android:attr/actionBarSize"
+    app:contentInsetLeft="0dp"
+    app:contentInsetStart="0dp">
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        >
+        <LinearLayout
+            android:id="@+id/set_back_id"
+            android:layout_width="100px"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginLeft="45px">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/fanhui3x"
+                android:layout_gravity="center_vertical"
+                android:layout_centerVertical="true"
+                />
+        </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="设置"
+            android:textSize="34px"
+            android:textColor="#fafafa"
+            />
+    </com.zhy.autolayout.AutoRelativeLayout>
+</android.support.v7.widget.Toolbar>

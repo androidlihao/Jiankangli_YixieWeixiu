@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta chatset="utf-8" />
+    <title>This is a test</title>
+    <style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    a{
+        display: block;
+        width: 100px;
+        padding: 1em;
+        margin: 0 auto;
+        font-size: 1em;
+        color: #FFF;
+        background-color: highlight;
+        text-decoration: none;
+    }
+    </style>
+</head>
+
+<body>
+    <a id="aaaa">js中调用本地方法</a>
+    <p></p>
+    <div id="helloweb">
+
+    </div>
+
+    <script src="jquery-3.1.0.min.js"></script>
+    <script>
+    
+        function funFromjs(){
+            document.getElementById("helloweb").innerHTML="HelloWebView,i'm from js";
+        }
+        var aTag = document.getElementsByTagName('a')[0];
+
+        aTag.addEventListener('click', function(){
+            //调用android本地方法
+            window.androidInfo.getMemberid("调用android本地方法fun1FromAndroid(String name)！！");
+            return false;
+        }, false);
+    </script>
+
+</body>
+</html>

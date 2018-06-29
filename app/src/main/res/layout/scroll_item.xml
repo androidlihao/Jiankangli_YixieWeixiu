@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="125dp"
+    android:layout_height="100dp">
+    <ImageView
+        android:layout_width="125dp"
+        android:layout_height="80dp"
+        android:layout_marginLeft="10dp"
+        android:background="@color/gray"
+        android:src="@mipmap/ic_launcher" />
+    <TextView
+        android:layout_width="125dp"
+        android:layout_height="20dp"
+        android:textSize="10sp"
+        android:layout_marginLeft="10dp"
+        android:text="健康力测试"
+        android:textColor="@color/black"
+        android:gravity="center_horizontal"/>
+</LinearLayout>

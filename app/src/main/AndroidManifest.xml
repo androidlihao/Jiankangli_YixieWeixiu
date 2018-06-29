@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.hs.jiankangli_example1">
+
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.SET_DEBUG_APP" />
+    <uses-permission android:name="android.permission.SYSTEM_ ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+
+    <application
+        android:name=".applications.MyApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:launchMode="singleInstance"
+        android:supportsRtl="true"
+        android:theme="@style/AppThemes">
+        <activity
+            android:name=".welcome_activity"
+            android:alwaysRetainTaskState="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemes">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".fix_helper_Activity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemes" />
+        <activity
+            android:name=".Set_Activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemes" />
+        <activity
+            android:name=".personal_Info.personal_info_activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemes" />
+        <activity
+            android:name=".password.Login_activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemes" /> <!-- 登录界面 -->
+        <activity
+            android:name=".password.Register_activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemes" /> <!-- 注册界面 -->
+        <activity
+            android:name=".password.Register_finish"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemes" /> <!-- 注册设置密码界面 -->
+        <activity
+            android:name=".password.Change_password_activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemes" />
+        <activity
+            android:name=".common_activity_pacage.Select_more_activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemes" />
+        <activity
+            android:name=".push_knowledge_package.guzhang_miaosu_activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemes" />
+        <activity
+            android:name=".push_knowledge_package.jiejue_buzhou_activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemes" />
+        <activity
+            android:name=".push_knowledge_package.work_push_activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemes" />
+        <activity
+            android:name=".push_knowledge_package.work_or_error_frist_kactivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemes" />
+        <activity
+            android:name=".push_knowledge_package.possible_activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemes" />
+        <activity
+            android:name=".push_knowledge_package.jieguo"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemes" />
+        <activity
+            android:name=".personal_Info.Edit_Personal_Info_activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemes" />
+        <activity
+            android:name=".personal_Info.personal_Skill_activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemes" />
+        <activity
+            android:name=".push_knowledge_package.push_knowledge_repair_frist_activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemes" />
+        <activity
+            android:name=".push_knowledge_package.fault_frist_activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemes" />
+        <activity
+            android:name=".push_knowledge_package.push_knowledge_repair_second_activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemes" />
+        <activity
+            android:name=".push_knowledge_package.push_knowledge_repair_three_activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemes" />
+        <activity
+            android:name=".push_knowledge_package.explanation_of_nouns_activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemes" />
+        <activity
+            android:name=".push_knowledge_package.push_knowledge_finish_activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemes" />
+        <activity
+            android:name=".push_knowledge_package.push_knowledge_digest_activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemes" />
+        <activity
+            android:name="integral.integral_detail_activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemes" />
+        <activity
+            android:name="integral.terms_activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemes" />
+        <activity
+            android:name=".commit_opinion_activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemes" />
+        <activity
+            android:name=".My_activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemes" />
+        <activity
+            android:name=".digest_or_comment.Digest_comment_activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemes" />
+        <activity
+            android:name=".seek.seek_activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemes"
+            android:windowSoftInputMode="stateUnchanged" />
+        <activity
+            android:name=".seek.seek_more_activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemes" />
+        <activity
+            android:name=".ask.ask_frist_activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemes" />
+        <activity
+            android:name=".ask.ask_second_activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemes" />
+        <activity
+            android:name=".ask.ask_digest_activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemes" />
+        <activity
+            android:name=".ask.ask_other_activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemes" />
+        <activity
+            android:name=".answer.answer_final_activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemes" />
+        <activity
+            android:name=".answer.answer_frist_activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemes" />
+        <activity
+            android:name=".answer.answer_second_activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemes" />
+        <activity
+            android:name=".certified_company.Certified_company_frist_activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemes" />
+        <activity
+            android:name=".common_activity_pacage.province_and_city_activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemes" />
+        <activity
+            android:name=".certified_company.Certified_company_second_activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemes" />
+        <activity
+            android:name=".certified_company.Certified_company_three_activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemes" />
+        <activity
+            android:name=".certified_company.Certified_company_four_activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemes" />
+        <activity
+            android:name=".certified_company.Certified_company_status_activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemes" />
+        <activity
+            android:name=".Push_Info.push_info_company_frist_activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemes" />
+        <activity
+            android:name=".Push_Info.push_info_no_pictures_activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemes" />
+        <activity
+            android:name=".Push_Info.push_zhengshu_activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemes" />
+        <activity
+            android:name=".Push_Info.push_personal_info_frist_activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemes" />
+        <activity
+            android:name=".Push_Info.push_personal_Or_other_second_info_activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemes" />
+        <activity
+            android:name=".Push_Info.push_info_project_frist_activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemes" />
+        <activity
+            android:name=".Push_Info.push_info_other_frist_activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemes" />
+        <activity
+            android:name=".common_activity_pacage.brand_or_skill_activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemes" />
+        <!-- 极光推送消息广播 -->
+        <receiver
+            android:name=".Broadcast_Receiver.my_receiver"
+            android:enabled="true">
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.REGISTRATION" />
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_OPENED" />
+                <action android:name="cn.jpush.android.intent.MESSAGE_RECEIVED" />
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED" />
+
+                <category android:name="com.example.hs.jiankangli_example1" />
+            </intent-filter>
+        </receiver>
+        <!-- QQ精简版 -->
+        <activity
+            android:name="com.umeng.qq.tencent.AuthActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="tencent1105713577" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.umeng.qq.tencent.AssistActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <!-- 微信分享 -->
+        <activity
+            android:name=".wxapi.WXEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <!-- 分享编辑 -->
+        <activity
+            android:name="com.umeng.socialize.editorpage.ShareActivity"
+            android:excludeFromRecents="true"
+            android:theme="@style/Theme.UMDefault" />
+        <!-- 添加友盟appkey -->
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="583e8a4fbbea8361c4001d3e" />
+        <!-- Image Selector Entry -->
+        <activity
+            android:name="me.nereo.multi_image_selector.MultiImageSelectorActivity"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="portrait" />
+
+        <meta-data
+            android:name="design_width"
+            android:value="750" />
+        <meta-data
+            android:name="design_height"
+            android:value="1334" />
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="${UMENG_CHANNEL_VALUE}" />
+
+        <activity
+            android:name=".wxapi.Seek2Activity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemes" />
+        <activity
+            android:name=".PartsActivity"
+            android:exported="true"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+
+        <activity android:name=".PartsDetailsActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".consultActivity"
+            android:windowSoftInputMode="stateHidden|stateUnchanged"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".IHavaPartActivity"
+            android:windowSoftInputMode="adjustPan|stateHidden"
+            android:screenOrientation="portrait"></activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,36 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">#06c1ae</item>
+        <item name="colorPrimaryDark">#06c1ae</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <style name="dialogActivity" parent="@android:style/Theme.DeviceDefault.Dialog.Alert" tools:targetApi="lollipop_mr1">
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+    <style name="Transparent" parent="android:style/Theme.Dialog">
+        <item name="android:windowBackground">@color/transparent_background</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Translucent</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+    <style name="myProgressBarStyleLarge">
+        　　        <item name="android:indeterminateDrawable">@drawable/rotate_loading_icon</item>
+        <item name="android:indeterminateDuration">1500</item>
+        　　        <item name="android:minWidth">50dip</item>
+        　　        <item name="android:maxWidth">50dip</item>
+        　　        <item name="android:minHeight">50dip</item>
+        　　        <item name="android:maxHeight">50dip</item>
+    </style>
+    <style name="myDialogTheme2" parent="android:Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:backgroundDimAmount">0.4</item>
+    </style>
+</resources>
